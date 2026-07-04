@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EVENTIFY | Discover. Connect. Grow.</title>
+<!-- Global Theme Handler (Prevents FOUC in dark mode) -->
+<script src="assets/js/theme.js"></script>
+<link rel="stylesheet" href="assets/css/theme.css"/>
+<style>
+    @font-face {
+        font-family: 'Material Symbols Outlined';
+        font-style: normal;
+        font-weight: 100 700;
+        font-display: block;
+        src: url('assets/fonts/material-symbols-outlined.woff2') format('woff2');
+    }
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+    </style>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    background: "#faf8ff",
+                    surface: "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f3f3fe",
+                    "surface-container": "#ededf9",
+                    "surface-container-high": "#e7e7f3",
+                    "surface-container-highest": "#e1e2ed",
+                    "on-surface": "#191b23",
+                    "on-surface-variant": "#434655",
+                    outline: "#737686",
+                    "outline-variant": "#c3c6d7",
+                    primary: "#0058be",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#2170e4",
+                    secondary: "#6b38d4",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#8455ef",
+                    tertiary: "#006947",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#00855b",
+                    error: "#ba1a1a"
+                },
+                fontFamily: {
+                    "display-lg": ["Inter"], "headline-xl": ["Inter"], "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"], "title-lg": ["Inter"], "title-md": ["Inter"],
+                    "body-lg": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"],
+                    "label-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"]
+                },
+                fontSize: {
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-lg": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+    .hero-gradient { background: radial-gradient(120% 120% at 20% 0%, rgba(0,88,190,0.10) 0%, rgba(107,56,212,0.06) 45%, rgba(250,248,255,0) 75%); }
+    .brand-gradient-text { background: linear-gradient(90deg, #0058be, #6b38d4); -webkit-background-clip: text; background-clip: text; color: transparent; }
+</style>
+</head>
+<body class="bg-background text-on-surface dark:bg-[#0d1c2e] dark:text-[#f8f9ff] min-h-screen transition-colors duration-300">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full glass-nav border-b border-outline-variant/30 dark:border-white/10">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between px-6 md:px-10 h-20">
+<a class="flex items-center gap-2" href="landing.html">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="font-headline-md text-headline-md font-black tracking-tight brand-gradient-text">EVENTIFY</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="landing (5).html">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Competitions</a>
+
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Events</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:text-[#c3c6d7] dark:hover:text-primary transition-colors" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10 transition-colors" title="Switch theme">
+    <span class="material-symbols-outlined text-[22px]">dark_mode</span>
+</button>
+<a class="hidden sm:inline-flex px-5 py-2.5 rounded-full font-label-md text-label-md text-primary hover:bg-primary/5 dark:text-primary dark:hover:bg-primary/10 transition-colors" href="login.html">Log in</a>
+<a class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-colors" href="signup.html">Sign up</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero -->
+<section class="relative overflow-hidden">
+<div id="hero-slider" class="relative h-[560px] md:h-[640px] w-full overflow-hidden">
+<!-- Slide 1: Competitions -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-700">
+<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Students collaborating during a coding competition"/>
+</div>
+<!-- Slide 2: Events / Conferences -->
+<div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/14612128/pexels-photo-14612128.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Audience attending a conference and seminar"/>
+</div>
+<!-- Slide 3: Internship Opportunities -->
+<div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/19451448/pexels-photo-19451448.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Two people discussing an internship opportunity at a career fair"/>
+</div>
+<!-- Slide 4: Winning Certificates -->
+<div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+<img class="w-full h-full object-cover" src="https://images.pexels.com/photos/7005686/pexels-photo-7005686.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Golden trophy awarded to a competition winner"/>
+</div>
+<!-- Readability scrim -->
+<div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10"></div>
+<!-- Overlaid content -->
+<div class="absolute inset-0 flex items-center">
+<div class="max-w-[1280px] w-full mx-auto px-6 md:px-10">
+<div class="max-w-xl space-y-5">
+<span id="hero-tag" class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 backdrop-blur-sm text-white font-label-md text-label-md rounded-full">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span id="hero-tag-text">Competitions. Prove Your Skills.</span>
+</span>
+<h1 class="font-display-lg text-display-lg leading-tight text-white">Find the right <span class="italic" style="color:#8fb8ff;">opportunity</span>.</h1>
+<p class="font-body-lg text-body-lg text-white/85 max-w-md">Competitions, events, internships, and certificates — all in one place.</p>
+<div class="flex flex-col sm:flex-row gap-3 max-w-xl">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border border-white/20 bg-white/95 dark:bg-slate-900/90 dark:border-white/15 dark:text-white shadow-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Search opportunities, skills, or keywords…" type="text"/>
+</div>
+<a class="px-8 py-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg text-center shadow-lg hover:bg-primary-container transition-colors" href="explore.html">Search</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating match badge -->
+<div class="absolute bottom-8 right-6 md:right-10 bg-surface-container-lowest dark:bg-slate-900/90 rounded-xl shadow-xl border border-outline-variant/40 dark:border-white/15 p-4 flex items-center gap-3 max-w-[240px] animate-float z-10">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+<span id="hero-badge-icon" class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<p id="hero-badge-title" class="font-label-md text-label-md text-on-surface dark:text-white">98% Match</p>
+<p id="hero-badge-sub" class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Global AI Innovation Challenge</p>
+</div>
+</div>
+<!-- Dots -->
+<div class="absolute bottom-8 left-6 md:left-10 flex items-center gap-2 z-10">
+<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white transition-all" data-index="0" aria-label="Slide 1"></button>
+<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-index="1" aria-label="Slide 2"></button>
+<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-index="2" aria-label="Slide 3"></button>
+<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-index="3" aria-label="Slide 4"></button>
+</div>
+</div>
+<script>
+(function() {
+    var slides = document.querySelectorAll('#hero-slider .hero-slide');
+    var dots = document.querySelectorAll('#hero-slider .hero-dot');
+    var badgeTitle = document.getElementById('hero-badge-title');
+    var badgeSub = document.getElementById('hero-badge-sub');
+    var badgeIcon = document.getElementById('hero-badge-icon');
+    var tagText = document.getElementById('hero-tag-text');
+    var meta = [
+        { icon: 'emoji_events', title: '98% Match', sub: 'AI Innovation Challenge', tag: 'Competitions. Prove Your Skills.' },
+        { icon: 'confirmation_number', title: 'Trending Now', sub: 'Tech Conference 2026', tag: 'Events. Meet & Connect.' },
+        { icon: 'work', title: 'Now Hiring', sub: 'Software Internship', tag: 'Internships. Launch Your Career.' },
+        { icon: 'workspace_premium', title: 'You Won!', sub: 'Certified Winner', tag: 'Certificates. Get Recognized.' }
+    ];
+    var current = 0;
+    var timer;
+
+    function goTo(index) {
+        slides[current].style.opacity = '0';
+        dots[current].classList.remove('bg-white');
+        dots[current].classList.add('bg-white/40');
+        current = index;
+        slides[current].style.opacity = '1';
+        dots[current].classList.remove('bg-white/40');
+        dots[current].classList.add('bg-white');
+        badgeIcon.textContent = meta[current].icon;
+        badgeTitle.textContent = meta[current].title;
+        badgeSub.textContent = meta[current].sub;
+        tagText.textContent = meta[current].tag;
+    }
+
+    function next() {
+        goTo((current + 1) % slides.length);
+    }
+
+    function startAutoplay() {
+        timer = setInterval(next, 2800);
+    }
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            clearInterval(timer);
+            goTo(parseInt(dot.getAttribute('data-index'), 10));
+            startAutoplay();
+        });
+    });
+
+    var slider = document.getElementById('hero-slider');
+    slider.addEventListener('mouseenter', function() { clearInterval(timer); });
+    slider.addEventListener('mouseleave', startAutoplay);
+
+    startAutoplay();
+})();
+</script>
+</section>
+<!-- The Problem -->
+<section class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20">
+<div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-white">The Problem</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-gray-300">Opportunities are scattered, hard to find, and not personalized.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest dark:bg-slate-900/60 border border-outline-variant/40 dark:border-white/10 rounded-2xl p-6 premium-card">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block">device_hub</span>
+<h3 class="font-title-md text-title-md mb-1 text-on-surface dark:text-white">Scattered Opportunities</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Hard to discover across many platforms.</p>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-900/60 border border-outline-variant/40 dark:border-white/10 rounded-2xl p-6 premium-card">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block">event_busy</span>
+<h3 class="font-title-md text-title-md mb-1 text-on-surface dark:text-white">Missed Deadlines</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Many users miss important events.</p>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-900/60 border border-outline-variant/40 dark:border-white/10 rounded-2xl p-6 premium-card">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block">person_search</span>
+<h3 class="font-title-md text-title-md mb-1 text-on-surface dark:text-white">Lack of Personalization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Generic content doesn't match user interests.</p>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-900/60 border border-outline-variant/40 dark:border-white/10 rounded-2xl p-6 premium-card">
+<span class="material-symbols-outlined text-primary text-3xl mb-3 block">groups</span>
+<h3 class="font-title-md text-title-md mb-1 text-on-surface dark:text-white">Limited Collaboration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Difficult to find the right people to collaborate.</p>
+</div>
+</div>
+</section>
+<!-- How it works -->
+<section class="bg-surface-container-low dark:bg-slate-900/40 border-y border-outline-variant/20 dark:border-white/5 py-16 md:py-20">
+<div class="max-w-[1280px] mx-auto px-6 md:px-10">
+<div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-white">How <span class="brand-gradient-text">EVENTIFY</span> Works</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-gray-300">A simple process to discover opportunities, connect, and grow.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+<div class="flex flex-col items-center text-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg text-title-lg shadow-md">1</div>
+<h4 class="font-label-lg text-label-lg text-on-surface dark:text-white">Create Profile</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Sign up in a few minutes.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg text-title-lg shadow-md">2</div>
+<h4 class="font-label-lg text-label-lg text-on-surface dark:text-white">Upload CV</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Let AI build a professional CV.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg text-title-lg shadow-md">3</div>
+<h4 class="font-label-lg text-label-lg text-on-surface dark:text-white">AI Analyzes Skills</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">We find the best matches for you.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg text-title-lg shadow-md">4</div>
+<h4 class="font-label-lg text-label-lg text-on-surface dark:text-white">Get Opportunities</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Events, courses, and competitions.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg text-title-lg shadow-md">5</div>
+<h4 class="font-label-lg text-label-lg text-on-surface dark:text-white">Connect &amp; Collaborate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-300">Collaborate with the right people.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Rafeeq Feature Highlight -->
+<section class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 space-y-4">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary/10 text-secondary dark:bg-secondary/20 dark:text-secondary-container font-label-md text-label-md rounded-full">EVENTIFY'S BEST AI FEATURE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-white">Meet <span class="brand-gradient-text">Rafeeq</span> — your AI voice companion</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-gray-300">Rafeeq reads and analyzes opportunities, checks compatibility with your skills, summarizes announcements, and encourages you every step of the way.</p>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-md hover:opacity-90 transition-opacity" href="rafeeq.html">
+<span class="material-symbols-outlined text-[20px]">mic</span> Try Rafeeq
+                </a>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="w-64 h-64 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-2xl animate-float">
+<span class="material-symbols-outlined text-white text-8xl">smart_toy</span>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-[1280px] mx-auto px-6 md:px-10 pb-20">
+<div class="rounded-2xl bg-gradient-to-r from-primary to-secondary p-10 md:p-16 text-center text-white space-y-6 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-white/5 pointer-events-none animate-gradient-x"></div>
+<h2 class="font-headline-lg text-headline-lg text-white">One platform. Endless opportunities.</h2>
+<p class="font-body-lg text-body-lg text-white/85 max-w-xl mx-auto">Join Eventify today and let AI connect you with the right opportunity, at the right time.</p>
+<a class="inline-flex px-8 py-4 rounded-full bg-white text-primary font-label-lg text-label-lg shadow-lg hover:bg-white/90 transition-colors" href="signup.html">Get Started Free</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-outline-variant/30 dark:border-white/10 bg-surface-container-lowest dark:bg-[#0b1420]">
+<div class="max-w-[1280px] mx-auto px-6 md:px-10 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1 space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="font-title-md text-title-md font-black brand-gradient-text">EVENTIFY</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-gray-400">Discover. Connect. Grow.</p>
+</div>
+<div class="space-y-2">
+<h5 class="font-label-md text-label-md text-on-surface dark:text-white mb-2">Platform</h5>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="explore.html">Explore</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="explore.html">Categories</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="community.html">Community</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="rafeeq.html">Rafeeq AI</a>
+</div>
+<div class="space-y-2">
+<h5 class="font-label-md text-label-md text-on-surface dark:text-white mb-2">Company</h5>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="about.html">Our Team</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="org-dashboard.html">For Organizers</a>
+</div>
+<div class="space-y-2">
+<h5 class="font-label-md text-label-md text-on-surface dark:text-white mb-2">Account</h5>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="login.html">Log in</a>
+<a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors" href="signup.html">Sign up</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 dark:border-white/10 py-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center font-body-sm text-body-sm text-on-surface-variant dark:text-gray-500">
+<span>© 2026 Eventify. All rights reserved.</span>
+<span class="hidden sm:inline text-outline-variant dark:text-gray-700">&middot;</span>
+<a class="hover:text-primary transition-colors" href="admin-dashboard.html">Admin</a>
+</div>
+</footer>
+</body></html>
